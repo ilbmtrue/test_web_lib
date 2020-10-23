@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{page_title}}{% endblock %}
+
+{% block body %}
+    <div class="container form-container h-100">
+        <div class="col-md-8">
+            <h4 class="mb-3">{{form_title}}</h4>
+            {{  form_start(add_book_form)   }}
+            {{  form_widget(add_book_form)  }}
+            {{ form_errors(add_book_form) }}
+            
+            {{  form_end(add_book_form) }}
+        </div>
+    <div>
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Список книг{% endblock %}
+
+{% block body %}
+
+    <div class="container form-container h-100">
+        {% for label, messages in app.flashes(['success', 'warning', 'danger']) %}
+            {% for message in messages %}
+                <div class="alert alert-{{ label }}">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endfor %}
+        <div class="col-md-8">
+
+            <h4 class="mb-3">Список книг</h4>
+            <table class="table">
+                {% if books %}
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">{% trans %} Name {% endtrans %}</th>
+                        <th scope="col">{% trans %} Year {% endtrans %}</th>
+                        <th scope="col">{% trans %} Author {% endtrans %}</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% endif %}
+                {% for book in books %}
+                    <tr>
+                        <th scope="row">{{ loop.index }}</th> 
+                        <td>{{ book.name }}</td>
+                        <td>{{ book.year }}</td>
+                        <td>{{ book.author }}</td>
+                        <td> <a href="/edit/{{ book.id }}">редактировать</a></td>
+                    </tr>
+                {% else %}
+                    <div class="text-center">Добавьте книгу!</div>
+                {% endfor %}
+                </tbody>
+            </table>
+
+            <a href="{{path('library_add')}}"><div class="btn btn-primary btn-lg btn-block">Добавить книгу</div></a>
+        </div>
+    <div>
+{% endblock %}

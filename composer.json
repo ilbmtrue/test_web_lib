@@ -1,20 +1,33 @@
 {
-    "name": "symfony/skeleton",
+    "name": "web library",
     "type": "project",
     "license": "proprietary",
-    "description": "A minimal Symfony project recommended to create bare bones applications",
+    "description": "test task web library",
     "minimum-stability": "dev",
     "require": {
         "php": ">=7.2.5",
         "ext-ctype": "*",
         "ext-iconv": "*",
+        "composer/package-versions-deprecated": "1.x-dev",
+        "doctrine/annotations": "^1.11@dev",
+        "doctrine/doctrine-bundle": "2.2.x-dev",
+        "doctrine/doctrine-migrations-bundle": "3.1.x-dev",
+        "doctrine/orm": "2.8.x-dev",
+        "symfony/asset": "5.2.*",
         "symfony/console": "5.2.*",
         "symfony/dotenv": "5.2.*",
         "symfony/flex": "^1.3.1",
+        "symfony/form": "5.2.*",
         "symfony/framework-bundle": "5.2.*",
-        "symfony/yaml": "5.2.*"
+        "symfony/translation": "5.2.*",
+        "symfony/twig-bundle": "5.2.*",
+        "symfony/validator": "5.2.*",
+        "symfony/yaml": "5.2.*",
+        "twig/twig": "3.x-dev"
     },
     "require-dev": {
+        "symfony/debug-bundle": "5.2.*",
+        "symfony/maker-bundle": "^1.0@dev"
     },
     "config": {
         "optimize-autoloader": true,
