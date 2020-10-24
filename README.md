@@ -35,6 +35,6 @@ user:password  - имя и пароль **существующего** поль�
     php bin/console doctrine:migrations:migrate  
 ```
 
-также есть оссобенности при локальном развертывании под Nginx [https://symfony.com/doc/current/setup/web_server_configuration.html#nginx]
+также есть оссобенности при локальном развертывании под [Nginx](https://symfony.com/doc/current/setup/web_server_configuration.html#nginx)
 
 если все правильно настроено, то результат выглядит [так](https://test-web-lib.herokuapp.com/)
