@@ -335,6 +335,9 @@
     "symfony/yaml": {
         "version": "5.x-dev"
     },
+    "twig/extra-bundle": {
+        "version": "3.x-dev"
+    },
     "twig/twig": {
         "version": "3.x-dev"
     },

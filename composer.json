@@ -1,11 +1,11 @@
 {
-    "name": "web library",
+    "name": "weblib",
     "type": "project",
     "license": "proprietary",
     "description": "test task web library",
     "minimum-stability": "dev",
     "require": {
-        "php": ">=7.2.5",
+        "php": ">=7.4",
         "ext-ctype": "*",
         "ext-iconv": "*",
         "composer/package-versions-deprecated": "1.x-dev",
@@ -23,6 +23,7 @@
         "symfony/twig-bundle": "5.2.*",
         "symfony/validator": "5.2.*",
         "symfony/yaml": "5.2.*",
+        "twig/extra-bundle": "3.x-dev",
         "twig/twig": "3.x-dev"
     },
     "require-dev": {
