@@ -14,7 +14,7 @@ class LibraryController extends AbstractController
     /**
      * @Route("/", name="library_list", methods={"GET"})
      */
-    public function list()
+    public function list(): Response
     {
         $repository = $this->getDoctrine()->getRepository(Book::class);
         $books = $repository->findAll();
